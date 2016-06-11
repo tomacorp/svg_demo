@@ -18,17 +18,6 @@ This repo can be installed with bower, or downloaded with git.
 git clone "https://github.com/tomacorp/svg_demo.git"
 ```
 
-If you already have the Snap.svg dependency, this is ready to use.
-Otherwise, go get Snap. Or, use Bower, which can download the
-dependencies for you.
-
-## Bower
-```bash
-bower install svg_demo
-```
-
-
-
 On OS X, this is an easy way to open the web page:
 ```bash
 cd svg_demo
@@ -42,4 +31,25 @@ python server.py
 ```
 This opens a web server on localhost port 8003:
 http://localhost:8003/
+
+## Bower
+```bash
+bower install svg_demo
+```
+This installs things in ```bower_components```, with ```svg_demo```
+alongside Snap.svg.
+
+The Bower configuration file lists Snap as a dependency.
+It is downloaded automatically as part of the svg_demo installation.
+However, the ```eyes_example.html``` test page uses a CDN
+to get Snap.
+
+The Python is in ```bower_components/server.py```
+and it does not know where to find Snap locally, which is in ```../Snap.svg/dist/snap.svg.js```. If I figure out a way to
+configure this better, the CDN will no longer be required.
+
+Since Bower is really the node.js package manager, and I am using
+Python instead of Node, it should be no surprise that adjustments
+are needed! This is a work in progress. If I learn more about this
+topic, it will appear here.
 
