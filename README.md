@@ -10,3 +10,4 @@ A small python web server is also included.
 This project can be tested without Python, though. 
 Just point a web browser at the file eyes_example.html.
 
+This repo can be installed with bower.
