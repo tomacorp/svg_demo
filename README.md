@@ -54,3 +54,6 @@ are needed! This is a work in progress. If I learn more about this
 topic, it will appear here.
 
 More later!
+More documentation!
+More graphics!
+
